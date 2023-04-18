@@ -1,0 +1,13 @@
+import requests
+
+url = "https://apis.cnvloyalty.com/loyalty/customers/10512608/membership/histories.json"
+
+headers = {
+    "Authorization": "TOKEN 643ca49ed77630aaa5dba728",
+    "accept": "*/*"
+}
+
+response = requests.get(url, headers=headers)
+
+# Hiển thị dữ liệu phản hồi từ API
+print(response.json())
